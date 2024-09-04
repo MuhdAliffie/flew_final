@@ -2,19 +2,19 @@ import 'package:flew_final/headers/community_button.dart';
 import 'package:flew_final/headers/drawer_menu.dart';
 import 'package:flutter/material.dart';
 
-class Community extends StatelessWidget {
-  const Community({super.key});
+class CommunityPage extends StatelessWidget {
+  const CommunityPage({super.key});
 
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home: CommunityPage(),
+      home: CommunityPageState(),
     );
   }
 }
 
-class CommunityPage extends StatelessWidget {
-  const CommunityPage({super.key});
+class CommunityPageState extends StatelessWidget {
+  const CommunityPageState({super.key});
 
   @override
   Widget build(BuildContext context) {

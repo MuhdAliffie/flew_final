@@ -1,5 +1,8 @@
 import 'package:flew_final/headers/drawer_item.dart';
+import 'package:flew_final/pages/chat.dart';
+import 'package:flew_final/pages/community.dart';
 import 'package:flew_final/pages/feed.dart';
+import 'package:flew_final/pages/market.dart';
 import 'package:flutter/material.dart';
 
 class CustomDrawer extends StatelessWidget {
@@ -77,11 +80,40 @@ class CustomDrawer extends StatelessWidget {
                 ),
               ),
             ),
-            DrawerItem(title: 'Feed', onTap: () {}),
-            DrawerItem(title: 'Chats', onTap: () {}),
+            DrawerItem(
+                title: 'Feed',
+                onTap: () {
+                  Navigator.of(context).pushAndRemoveUntil(
+                    MaterialPageRoute(builder: (context) => const FeedPage()),
+                    (Route<dynamic> route) =>
+                        false, // Remove all routes until this point
+                  );
+                }),
+            DrawerItem(
+                title: 'Chats',
+                onTap: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const ChatPage()));
+                }),
             DrawerItem(title: 'News', onTap: () {}),
-            DrawerItem(title: 'Market', onTap: () {}),
-            DrawerItem(title: 'Communities', onTap: () {}),
+            DrawerItem(
+                title: 'Market',
+                onTap: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const MarketPage()));
+                }),
+            DrawerItem(
+                title: 'Communities',
+                onTap: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const CommunityPage()));
+                }),
             DrawerItem(title: 'Drone services', onTap: () {}),
           ],
         ),

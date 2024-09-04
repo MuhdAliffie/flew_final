@@ -21,19 +21,19 @@ class Chat2 extends StatelessWidget {
   Widget build(BuildContext context) => const MaterialApp(
         home: Directionality(
           textDirection: TextDirection.ltr,
-          child: Chat2Page(),
+          child: ChatPage(),
         ),
       );
 }
 
-class Chat2Page extends StatefulWidget {
-  const Chat2Page({super.key});
+class ChatPage extends StatefulWidget {
+  const ChatPage({super.key});
 
   @override
-  State<Chat2Page> createState() => _ChatPageState();
+  State<ChatPage> createState() => _ChatPageState();
 }
 
-class _ChatPageState extends State<Chat2Page> {
+class _ChatPageState extends State<ChatPage> {
   List<types.Message> _messages = [];
   final _user = const types.User(
     id: '82091008-a484-4a89-ae75-a22bf8d6f3ac', //user id in messages.json "Matthew"

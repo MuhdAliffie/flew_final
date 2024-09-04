@@ -5,6 +5,7 @@ class CategorySelector extends StatefulWidget {
   const CategorySelector({super.key});
 
   @override
+  // ignore: library_private_types_in_public_api
   _CategorySelectorState createState() => _CategorySelectorState();
 }
 
