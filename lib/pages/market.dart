@@ -1,5 +1,6 @@
-import 'package:flew_final/headers/drawer_menu.dart';
-import 'package:flew_final/headers/product_card.dart';
+import 'package:flew_final/headers/drawer/drawer_menu.dart';
+import 'package:flew_final/headers/market/products.dart';
+import 'package:flew_final/headers/market/product_card.dart';
 import 'package:flutter/material.dart';
 
 class MarketPage extends StatelessWidget {
@@ -84,13 +85,14 @@ class MarketPage extends StatelessWidget {
                 mainAxisSpacing: 16.0,
                 childAspectRatio: 0.75,
               ),
-              itemCount: 4, // Replace with the number of products
+              itemCount: products.length, // Use the length of the products list
               itemBuilder: (context, index) {
-                return const ProductCard(
-                  imagePath:
-                      'assets/images/DJICamera.png', // Replace with your image path
-                  productName: 'DJI Camera',
-                  price: '\$55',
+                final product = products[index];
+                return ProductCard(
+                  imagePath: product['imagePath']!, // Access the image path
+                  productName:
+                      product['productName']!, // Access the product name
+                  price: product['price']!, // Access the price
                 );
               },
             ),

@@ -1,5 +1,5 @@
-import 'package:flew_final/headers/community_button.dart';
-import 'package:flew_final/headers/drawer_menu.dart';
+import 'package:flew_final/headers/community/community_button.dart';
+import 'package:flew_final/headers/drawer/drawer_menu.dart';
 import 'package:flutter/material.dart';
 
 class CommunityPage extends StatelessWidget {

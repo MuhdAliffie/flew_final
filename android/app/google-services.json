@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "653055002198",
+    "project_id": "flew-database-f024f",
+    "storage_bucket": "flew-database-f024f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:653055002198:android:d980eeff1237e4442f9df7",
+        "android_client_info": {
+          "package_name": "main.dart"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAXbdm1xtuthEKRrN6n3CXOQQ2f0gcNcKY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

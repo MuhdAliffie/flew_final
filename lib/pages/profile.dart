@@ -1,6 +1,6 @@
-import 'package:flew_final/headers/drawer_menu.dart';
-import 'package:flew_final/headers/postcard.dart';
-import 'package:flew_final/headers/stat_counter.dart';
+import 'package:flew_final/headers/drawer/drawer_menu.dart';
+import 'package:flew_final/headers/market/postcard.dart';
+import 'package:flew_final/headers/profile/stat_counter.dart';
 import 'package:flutter/material.dart';
 
 class ProfilePage extends StatefulWidget {

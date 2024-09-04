@@ -1,4 +1,4 @@
-import 'package:flew_final/headers/category_button.dart';
+import 'package:flew_final/headers/profile/category_button.dart';
 import 'package:flutter/material.dart';
 
 class CategorySelector extends StatefulWidget {
