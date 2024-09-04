@@ -1,3 +1,4 @@
+import 'package:flew_final/headers/drawer_menu.dart';
 import 'package:flew_final/pages/chat.dart';
 import 'package:flew_final/pages/community.dart';
 import 'package:flew_final/pages/market.dart';
@@ -16,8 +17,41 @@ class FeedPageState extends State<FeedPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Theme.of(context).colorScheme.secondary,
-        title: const Text('Feed'),
+          backgroundColor:
+              Colors.transparent, // Make the AppBar background transparent
+          flexibleSpace: Container(
+            decoration: BoxDecoration(
+              gradient: LinearGradient(
+                colors: [
+                  Colors.blue[900]!,
+                  const Color.fromARGB(255, 51, 156, 243)
+                ], // Dark blue to light blue
+                begin: Alignment.topLeft,
+                end: Alignment.bottomRight,
+              ),
+            ),
+          ),
+          title: const Text(
+            'Feed',
+            style: TextStyle(
+              fontSize: 28,
+              fontWeight: FontWeight.bold,
+              fontFamily: 'Lexend Deca',
+              color: Colors.white, // This color will be masked by the gradient
+            ),
+          ),
+          actions: [
+            IconButton(
+              icon: const Icon(Icons.search),
+              onPressed: () {},
+            ),
+            IconButton(
+              icon: const Icon(Icons.settings),
+              onPressed: () {},
+            ),
+          ]),
+      drawer: const Drawer(
+        child: CustomDrawer(),
       ),
       body: Center(
         child: Column(
