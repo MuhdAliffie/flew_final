@@ -1,5 +1,5 @@
 import 'package:flew_final/headers/drawer_menu.dart';
-import 'package:flew_final/pages/chat.dart';
+import 'package:flew_final/pages/chat2.0.dart';
 import 'package:flew_final/pages/community.dart';
 import 'package:flew_final/pages/market.dart';
 import 'package:flew_final/pages/profile.dart';
@@ -64,7 +64,7 @@ class FeedPageState extends State<FeedPage> {
                     Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => const ChatPage()));
+                            builder: (context) => const Chat2Page()));
                   },
                   child: const Text('Chat'),
                 ),
