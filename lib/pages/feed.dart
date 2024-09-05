@@ -1,6 +1,6 @@
 import 'package:flew_final/headers/drawer/drawer_menu.dart';
-import 'package:flew_final/pages/chat.dart';
 import 'package:flew_final/pages/community.dart';
+import 'package:flew_final/pages/contact.dart';
 import 'package:flew_final/pages/market.dart';
 import 'package:flew_final/pages/profile.dart';
 import 'package:flutter/material.dart';
@@ -64,7 +64,7 @@ class FeedPageState extends State<FeedPage> {
                     Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => const ChatPage()));
+                            builder: (context) => const SelectContact()));
                   },
                   child: const Text('Chat'),
                 ),
