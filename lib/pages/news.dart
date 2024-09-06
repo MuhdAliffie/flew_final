@@ -1,5 +1,7 @@
 import 'package:flew_final/headers/drawer/drawer_menu.dart';
 import 'package:flew_final/headers/model/appbar_model.dart';
+import 'package:flew_final/headers/news/event_card.dart';
+import 'package:flew_final/headers/news/news_card.dart';
 import 'package:flutter/material.dart';
 
 class NewsPage extends StatelessWidget {
@@ -34,7 +36,7 @@ class NewsPageState extends StatelessWidget {
               child: GestureDetector(
                 onTap: () {
                   // Add your tap functionality here
-                  print("Image button pressed!");
+                  print("Banner button pressed!");
                 },
                 child: Container(
                   height: 200,
@@ -146,22 +148,6 @@ class NewsPageState extends StatelessWidget {
   }
 
   // Function to create event card
-  Widget eventCard(String imageUrl) {
-    return Padding(
-      padding: const EdgeInsets.all(8.0),
-      child: Container(
-        width: 150,
-        height: 120,
-        decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(15),
-          image: DecorationImage(
-            image: AssetImage(imageUrl), // Use the passed URL
-            fit: BoxFit.cover,
-          ),
-        ),
-      ),
-    );
-  }
 
   // Function to create filter button
   Widget filterButton(String text) {
@@ -171,23 +157,5 @@ class NewsPageState extends StatelessWidget {
           onPressed: () {},
           child: Text(text),
         ));
-  }
-
-  // Function to create news card
-  Widget newsCard(String imageUrl) {
-    return Padding(
-      padding: const EdgeInsets.all(8.0),
-      child: Container(
-        width: 150,
-        height: 120,
-        decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(15),
-          image: DecorationImage(
-            image: AssetImage(imageUrl), // Use the passed URL
-            fit: BoxFit.cover,
-          ),
-        ),
-      ),
-    );
   }
 }
