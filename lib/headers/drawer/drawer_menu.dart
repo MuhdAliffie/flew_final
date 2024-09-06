@@ -3,6 +3,7 @@ import 'package:flew_final/pages/chat.dart';
 import 'package:flew_final/pages/community.dart';
 import 'package:flew_final/pages/feed.dart';
 import 'package:flew_final/pages/market.dart';
+import 'package:flew_final/pages/news.dart';
 import 'package:flutter/material.dart';
 
 class CustomDrawer extends StatelessWidget {
@@ -97,7 +98,14 @@ class CustomDrawer extends StatelessWidget {
                       MaterialPageRoute(
                           builder: (context) => const ChatPage()));
                 }),
-            DrawerItem(title: 'News', onTap: () {}),
+            DrawerItem(
+                title: 'News',
+                onTap: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const NewsPage()));
+                }),
             DrawerItem(
                 title: 'Market',
                 onTap: () {

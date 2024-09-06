@@ -1,6 +1,7 @@
 import 'package:flew_final/headers/drawer/drawer_menu.dart';
 import 'package:flew_final/headers/market/products.dart';
 import 'package:flew_final/headers/market/product_card.dart';
+import 'package:flew_final/headers/model/appbar_model.dart';
 import 'package:flutter/material.dart';
 
 class MarketPage extends StatelessWidget {
@@ -9,40 +10,9 @@ class MarketPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-          backgroundColor:
-              Colors.transparent, // Make the AppBar background transparent
-          flexibleSpace: Container(
-            decoration: BoxDecoration(
-              gradient: LinearGradient(
-                colors: [
-                  Colors.blue[900]!,
-                  const Color.fromARGB(255, 51, 156, 243)
-                ], // Dark blue to light blue
-                begin: Alignment.topLeft,
-                end: Alignment.bottomRight,
-              ),
-            ),
-          ),
-          title: const Text(
-            'Market',
-            style: TextStyle(
-              fontSize: 28,
-              fontWeight: FontWeight.bold,
-              fontFamily: 'Lexend Deca',
-              color: Colors.white, // This color will be masked by the gradient
-            ),
-          ),
-          actions: [
-            IconButton(
-              icon: const Icon(Icons.search),
-              onPressed: () {},
-            ),
-            IconButton(
-              icon: const Icon(Icons.settings),
-              onPressed: () {},
-            ),
-          ]),
+      appBar: const AppbarModel(
+        title: 'Market',
+      ),
       drawer: const Drawer(
         child: CustomDrawer(),
       ),
