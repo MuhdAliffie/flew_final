@@ -2,8 +2,10 @@ import 'package:flew_final/headers/drawer/drawer_item.dart';
 import 'package:flew_final/pages/chat.dart';
 import 'package:flew_final/pages/community.dart';
 import 'package:flew_final/pages/feed.dart';
+import 'package:flew_final/pages/feed2.dart';
 import 'package:flew_final/pages/market.dart';
 import 'package:flew_final/pages/news.dart';
+import 'package:flew_final/pages/service.dart';
 import 'package:flutter/material.dart';
 
 class CustomDrawer extends StatelessWidget {
@@ -85,7 +87,7 @@ class CustomDrawer extends StatelessWidget {
                 title: 'Feed',
                 onTap: () {
                   Navigator.of(context).pushAndRemoveUntil(
-                    MaterialPageRoute(builder: (context) => const FeedPage()),
+                    MaterialPageRoute(builder: (context) => const Feed2Page()),
                     (Route<dynamic> route) =>
                         false, // Remove all routes until this point
                   );
@@ -122,7 +124,14 @@ class CustomDrawer extends StatelessWidget {
                       MaterialPageRoute(
                           builder: (context) => const CommunityPage()));
                 }),
-            DrawerItem(title: 'Drone services', onTap: () {}),
+            DrawerItem(
+                title: 'Drone services',
+                onTap: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const ServicePage()));
+                }),
           ],
         ),
       ),

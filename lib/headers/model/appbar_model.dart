@@ -24,7 +24,7 @@ class AppbarModel extends StatelessWidget implements PreferredSizeWidget {
       title: Text(
         title,
         style: const TextStyle(
-          fontSize: 28,
+          fontSize: 25.0,
           fontWeight: FontWeight.bold,
           fontFamily: 'Lexend Deca',
           color: Colors.white,

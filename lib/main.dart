@@ -1,4 +1,5 @@
 import 'package:flew_final/pages/feed.dart';
+import 'package:flew_final/pages/feed2.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: const FeedPage(),
+      home: const Feed2Page(),
     );
   }
 }
