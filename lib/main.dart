@@ -1,4 +1,3 @@
-import 'package:flew_final/pages/feed.dart';
 import 'package:flew_final/pages/feed2.dart';
 import 'package:flutter/material.dart';
 
