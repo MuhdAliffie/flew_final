@@ -1,4 +1,6 @@
 import 'package:flew_final/headers/drawer/drawer_menu.dart';
+import 'package:flew_final/headers/drone_services/permit.dart';
+import 'package:flew_final/headers/drone_services/rules_regulations.dart';
 import 'package:flew_final/headers/model/appbar_model.dart';
 import 'package:flutter/material.dart';
 
@@ -48,16 +50,28 @@ class ServicePageState extends StatelessWidget {
                   ServiceTile(
                     icon: Icons.article,
                     label: 'Drone rules and regulations',
-                    onTap: () => print('Drone rules and regulations'),
+                    onTap: () {
+                      print('Drone rules and regulations');
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const PdfListPage()));
+                    },
                   ),
                   ServiceTile(
                     icon: Icons.map,
                     label: 'Drone fly zone',
                     onTap: () => print('Drone fly zone'),
                   ),
-                  const ServiceTile(
+                  ServiceTile(
                     icon: Icons.assignment,
                     label: 'Apply a permit',
+                    onTap: () {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => const PDFFormScreen()));
+                    },
                   ),
                   const ServiceTile(
                     icon: Icons.build,

@@ -2,7 +2,6 @@ import 'package:flew_final/headers/drawer/drawer_item.dart';
 import 'package:flew_final/pages/chat.dart';
 import 'package:flew_final/pages/community.dart';
 import 'package:flew_final/pages/feed.dart';
-import 'package:flew_final/pages/feed2.dart';
 import 'package:flew_final/pages/market.dart';
 import 'package:flew_final/pages/news.dart';
 import 'package:flew_final/pages/service.dart';
@@ -34,7 +33,7 @@ class CustomDrawer extends StatelessWidget {
                   child: Row(
                     children: [
                       const CircleAvatar(
-                        radius: 40.0, // Adjust the size as needed
+                        radius: 45.0, // Adjust the size as needed
                         backgroundImage: AssetImage(
                             'assets/images/profile_picture.jpeg'), // Add your image asset here
                       ),
@@ -87,7 +86,7 @@ class CustomDrawer extends StatelessWidget {
                 title: 'Feed',
                 onTap: () {
                   Navigator.of(context).pushAndRemoveUntil(
-                    MaterialPageRoute(builder: (context) => const Feed2Page()),
+                    MaterialPageRoute(builder: (context) => const FeedPage()),
                     (Route<dynamic> route) =>
                         false, // Remove all routes until this point
                   );
